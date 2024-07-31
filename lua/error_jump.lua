@@ -8,7 +8,7 @@ function M.jump_to_error_location()
   local start_col = vim.fn.col('.')
 
   -- Search for the next line starting with "error["
-  local error_line = vim.fn.search('^error\[', 'nW')
+  local error_line = vim.fn.search('^error\\[', 'nW')
   -- local line_number = vim.fn.search('^error\[.*', 'bW')
 
   
